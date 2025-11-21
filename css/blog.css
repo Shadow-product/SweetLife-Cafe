@@ -1,0 +1,50 @@
+/* Сетка блога */
+.blog {
+  padding: 48px 16px;
+}
+
+.blog h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* Карточки блога */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.blog-card {
+  background: #111;
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.blog-card:hover {
+  transform: translateY(-4px);
+  opacity: 0.7;
+}
+.blog-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16/10; 
+}
+.blog-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text);
+  text-align: center;
+}
+.blog-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6; 
+  color: var(--text);
+  margin: 16px;
+  text-align: center;
+}

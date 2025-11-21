@@ -1,0 +1,118 @@
+:root {
+  --bg: #000;
+  --text: #fff;
+  --muted: #808080;
+  --accent: #30a46c;
+  --accent-hover: #1e7e4e;
+  --radius: 12px;
+}
+
+* { box-sizing: border-box; }
+html, body { 
+  margin: 0;
+  padding: 0; 
+}
+body {
+   background-color: var(--bg);
+   color: var(--text); 
+}
+
+/* Шапка */
+.site-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+.logo a {
+   display: inline-block; 
+   text-decoration: none; 
+  }
+.logo img { 
+  height: 50px; 
+  width: auto; 
+}
+
+/* Навигация */
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+   color: var(--accent);
+   text-decoration: underline; 
+   opacity: 0.7; 
+  }
+
+/* Hamburger без JS */
+.menu-checkbox { 
+  display: none; 
+}
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: var(--text);
+  background: none;
+  border: none;
+  cursor: pointer;
+
+ /* Добавляем позиционирование */
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  z-index: 1000;
+}
+
+/* Футер */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Inter', sans-serif;
+  gap: 16px 24px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 24px;
+}
+
+/* Контейнер */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
+/* Адаптивная навигация */
+@media (max-width: 768px) {
+  .menu-icon { 
+    display: block;
+    font-family: 'Inter', sans-serif; 
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--bg);
+    padding: 16px;
+    border-top: 1px solid var(--bg);
+  }
+  .menu-checkbox:checked ~ nav .nav-links {
+     display: flex; 
+  }
+} 

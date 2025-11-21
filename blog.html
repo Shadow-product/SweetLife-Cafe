@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Блог SweetLife — вдохновение, вкус и уют в каждой статье.">
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css"> <!-- Стиль normalize.css -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Общий стиль -->
+  <link rel="stylesheet" href="css/blog.css"> <!-- Специфика страницы -->
+  <link rel="stylesheet" href="css/responsive.css"> <!-- Адаптивные медиазапросы -->
+  <title>Блог | SweetLife</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/sweetlife-logo.webp" alt="SweetLife Cafe">
+      </a>
+    </div>
+
+    <!-- Hamburger без JS -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="reservation.html">Бронирование</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="blog.html" aria-current="page">Блог</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+    <!-- Main -->
+    <main>
+      <section class="blog">
+        <div class="container">
+        <h1>Блог SweetLife</h1>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <img src="img/menu-cup-of-latte.webp" alt="Латте">
+              <h3>Искусство приготовления латте</h3>
+              <p>Как бариста создают идеальную молочную пенку и рисунки на кофе.</p>
+            </article>
+
+            <article class="blog-card">
+              <img src="img/menu-croissant.webp" alt="Круассан">
+              <h3>Секреты свежей выпечки</h3>
+              <p>Почему наши круассаны всегда такие хрустящие и ароматные.</p>
+            </article>
+
+            <article class="blog-card">
+              <img src="img/menu-home-about-us.webp" alt="Интерьер кафе SweetLife Cafe">
+              <h3>Атмосфера SweetLife</h3>
+              <p>Как мы создаём уют и тепло для каждого гостя.</p>
+            </article>
+
+            <article class="blog-card">
+              <img src="img/menu-home-about-us-blog.webp" alt="История SweetLife Cafe">
+              <h3>История SweetLife Cafe</h3>
+              <p>С чего начинался история SweetLife Cafe.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<!-- Footer-->
+  <footer>
+    <div class="footer-container">
+      <p>ул. Абая 25, Алматы</p>
+      <p>+7 (777) 777-77-77</p>
+      <p>info@sweetlife.cafe</p>
+      <p>© SweetLife Cafe, 2025</p>
+    </div>
+  </footer>
+</body>
+</html>

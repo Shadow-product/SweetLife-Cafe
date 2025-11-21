@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Забронируйте столик в SweetLife Café онлайн — быстро, удобно и без звонков. Мы ждём вас!">
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css"> <!-- Стиль normalize.css -->
+  <link rel="stylesheet" href="css/style.css">       <!-- Общий стиль -->
+  <link rel="stylesheet" href="css/reservation.css"> <!-- Специфика страницы -->
+  <link rel="stylesheet" href="css/responsive.css"> <!-- Адаптивные медиазапросы -->
+  <title>Бронирование | SweetLife</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/sweetlife-logo.webp" alt="SweetLife Cafe">
+      </a>
+    </div>
+
+    <!-- Hamburger без JS -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="reservation.html" aria-current="page">Бронирование</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="blog.html">Блог</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="reservation">
+      <div class="container">
+        <h1>Забронировать столик</h1>
+        <form class="form-grid">
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="form-field">
+            <label for="date">Дата</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+
+          <div class="form-field">
+            <label for="time">Время</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+
+          <div class="form-field">
+            <label for="guests">Количество гостей</label>
+            <input type="number" id="guests" name="guests" min="1" max="20" required>
+          </div>
+
+          <div class="form-field">
+            <label for="notes">Комментарий</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Забронировать</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>ул. Абая 25, Алматы</p>
+      <p>+7 (777) 777-77-77</p>
+      <p>info@sweetlife.cafe</p>
+      <p>© SweetLife Cafe, 2025</p>
+    </div>
+  </footer>
+</body>
+</html>
+

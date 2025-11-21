@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Добро пожаловать в SweetLife Cafe — уютное кафе в Алматы с ароматным кофе и свежей выпечкой. Откройте для себя сладкие моменты.">
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css"> <!-- Стиль normalize.css -->
+  <link rel="stylesheet" href="css/style.css">       <!-- Общий стиль и hamburger -->
+  <link rel="stylesheet" href="css/index.css">       <!-- Специфика главной -->
+  <link rel="stylesheet" href="css/responsive.css">  <!-- Адаптивные медиазапросы -->
+  <title>Главная | SweetLife</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/sweetlife-logo.webp" alt="SweetLife Cafe">
+      </a>
+    </div>
+
+    <!-- Hamburger без JS -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox" aria-hidden="true">
+    <label for="menu-toggle" class="menu-icon" aria-label="Открыть меню">☰</label>
+
+    <nav aria-label="Основная навигация">
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Главная</a></li>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="reservation.html">Бронирование</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="blog.html">Блог</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-container container">
+        <div class="hero-text">
+          <h1>Enjoy the Sweet Moments</h1>
+          <p class="subtitle">Наслаждайтесь сладкими моментами каждый день!</p>
+          <a class="btn" href="menu.html">Меню</a>
+        </div>
+        <div class="hero-media">
+          <img src="img/menu-croissant-with-latte-2.webp" alt="Латте и круассан">
+        </div>
+      </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="info-row">
+      <div class="info-block container">
+        <h2><a href="about.html">О нас - SweetLife</a></h2>
+        <div class="about-image">
+          <img src="img/menu-home-about-us.webp" alt="Интерьер SweetLife Cafe">
+        </div>
+      </div>
+    </section>
+
+    <!-- Блог-превью -->
+    <section class="blog-preview">
+      <div class="container">
+        <h2><a href="blog.html">Блог SweetLife</a></h2>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <img src="img/menu-latte.webp" alt="Латте">
+            <h3>Латте</h3>
+            <p>Нежный кофе с молочной пенкой</p>
+          </article>
+
+          <article class="blog-card">
+            <img src="img/menu-blueberry-muffin.webp" alt="Черничный маффин">
+            <h3>Черничный маффин</h3>
+            <p>Маффин с кусочками черники, приготовленный каждое утро</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+    <footer>
+    <div class="footer-container">
+      <p>ул. Абая 25, Алматы</p>
+      <p>+7 (777) 777-77-77</p>
+      <p>info@sweetlife.cafe</p>
+      <p>© SweetLife Cafe, 2025</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+

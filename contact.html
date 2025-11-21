@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Свяжитесь с SweetLife Cafe: адрес, телефон, email и карта проезда. Мы всегда рады гостям.">
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css"> <!-- Стиль normalize.css -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Общий стиль -->
+  <link rel="stylesheet" href="css/contact.css"> <!-- Специфика страницы -->
+  <link rel="stylesheet" href="css/responsive.css"> <!-- Адаптивные медиазапросы -->
+  <title>Контакты | SweetLife</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/sweetlife-logo.webp" alt="SweetLife Cafe">
+      </a>
+    </div>
+
+    <!-- Hamburger без JS -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="reservation.html">Бронирование</a></li>
+        <li><a href="contact.html" aria-current="page">Контакты</a></li>
+        <li><a href="blog.html">Блог</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+    <!-- Main -->
+    <main>
+      <section class="contact-grid">
+      <!-- Блок карты -->
+      <div class="contact-map">
+         <h1>Контакты SweetLife</h1>
+        <iframe src="https://www.google.com/maps/d/embed?mid=19Z7n4ICot5fgNyzFHpx81F4g-TTgGeM&ehbc=2E312F&noprof=1"
+          title="Карта SweetLife Café" 
+          aria-label="Карта с расположением SweetLife Café на ул. Абая 25, Алматы" 
+          width="100%" 
+          height="400"
+          style="border:0; border-radius:12px;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Блок информации -->
+      <div class="contact-info">
+        <p><strong>Адрес:</strong> ул. Абая 25, Алматы</p>
+        <p><strong>Телефон:</strong> +7 (777) 777-77-77</p>
+        <p><strong>Email:</strong> <a href="mailto:info@sweetlife.cafe">info@sweetlife.cafe</a></p>
+        <p><strong>Время работы:</strong> Открыто ежедневно с 09:00 до 22:00.</p>
+
+        <!-- Кнопка бронирования -->
+        <a class="btn" href="reservation.html">Забронировать столик</a>
+
+        <!-- Соцсети -->
+        <div class="social-links">
+          <button>Instagram</button>
+          <button>Facebook</button>
+        </div>
+      </div>
+    </section>
+    </main>
+
+<!-- Footer-->
+  <footer>
+    <div class="footer-container">
+      <p>ул. Абая 25, Алматы</p>
+      <p>+7 (777) 777-77-77</p>
+      <p>info@sweetlife.cafe</p>
+      <p>© SweetLife Cafe, 2025</p>
+    </div>
+  </footer>
+</body>
+</html>

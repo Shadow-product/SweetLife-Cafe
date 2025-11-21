@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ознакомьтесь с меню SweetLife Cafe: свежие десерты, авторский кофе и натуральные ингредиенты каждый день.">
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css"> <!-- Стиль normalize.css -->
+  <link rel="stylesheet" href="css/style.css">       <!-- Общий стиль -->
+  <link rel="stylesheet" href="css/menu.css">        <!-- Специфика меню -->
+  <link rel="stylesheet" href="css/responsive.css">  <!-- Адаптивные медиазапросы -->
+  <title>Меню | SweetLife</title>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/sweetlife-logo.webp" alt="SweetLife Cafe">
+      </a>
+    </div>
+
+    <!-- Hamburger без JS -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="menu.html" aria-current="page">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="reservation.html">Бронирование</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="blog.html">Блог</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="menu">
+      <div class="container">
+        <h1>Меню SweetLife Cafe</h1>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <img src="img/menu-croissant.webp" alt="Круассан">
+            <h3>Свежая выпечка с маслом</h3>
+            <p class="price">₸900</p>
+          </div>
+
+          <div class="menu-item">
+            <img src="img/menu-chocolate-muffin.webp" alt="Шоколадный маффин">
+            <h3>Маффин с кусочками шоколада</h3>
+            <p class="price">₸1100</p>
+          </div>
+
+          <div class="menu-item">
+            <img src="img/menu-fruit-salad-menu.webp" alt="Фруктовая тарелка">
+            <h3>Свежие сезонные фрукты</h3>
+            <p class="price">₸1500</p>
+          </div>
+
+          <div class="menu-item">
+            <img src="img/menu-cup-of-latte.webp" alt="Кружка латте">
+            <h3>Классический латте</h3>
+            <p class="price">₸1300</p>
+          </div>
+
+          <div class="menu-item">
+            <img src="img/menu-chocolate-cake.webp" alt="Шоколадный торт">
+            <h3>Слоёный торт с ганашем</h3>
+            <p class="price">₸1800</p>
+          </div>
+
+          <div class="menu-item">
+            <img src="img/menu-croissant-with-latte-1.webp" alt="Круассан с латте">
+            <h3>Завтрак-комбо: круассан + кофе</h3>
+            <p class="price">₸1900</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>ул. Абая 25, Алматы</p>
+      <p>+7 (777) 777-77-77</p>
+      <p>info@sweetlife.cafe</p>
+      <p>© SweetLife Cafe, 2025</p>
+    </div>
+  </footer>
+</body>
+</html>
